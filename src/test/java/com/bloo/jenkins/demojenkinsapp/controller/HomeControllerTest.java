@@ -35,15 +35,4 @@ class HomeControllerTest {
 
     }
 
-    @DisplayName ("Jenkins 에 테스트 fail 이 올라가면 어떻게 될")
-    @Test
-    void hello_test_fail () throws Exception {
-        // given
-        // when
-        mockMvc.perform(get("/"))
-            .andExpect(content().string("잘못된 String"))
-            .andExpect(status().isOk());
-        // then
-
-    }
 }
