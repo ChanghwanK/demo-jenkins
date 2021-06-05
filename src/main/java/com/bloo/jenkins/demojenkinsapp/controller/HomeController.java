@@ -22,4 +22,9 @@ public class HomeController {
     public String hello2() {
         return "Bloo Hello2";
     }
+
+    @GetMapping("hello3")
+    public String hello3() {
+        return "Bloo Hello3";
+    }
 }
